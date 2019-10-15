@@ -1,10 +1,13 @@
+import { INCREMENT, DECREMENT, INCREMENT_IF_ODD } from "../constants/actions";
+
 export default function counter(state = 0, action) {
+  console.log("reducer", state, action);
   switch (action.type) {
-    case "INCREMENT":
+    case INCREMENT:
       return state + 1;
-    case "INCREMENT_IF_ODD":
+    case INCREMENT_IF_ODD:
       return state % 2 !== 0 ? state + 1 : state;
-    case "DECREMENT":
+    case DECREMENT:
       return state - 1;
     default:
       return state;
