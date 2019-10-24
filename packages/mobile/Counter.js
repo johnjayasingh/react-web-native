@@ -15,9 +15,9 @@ class Counter extends Component {
             }}>
                 <Text>Counter</Text>
                 <View>
-                    <Button onPress={this.props.decrement}>-</Button>
+                    <Button onPress={this.props.decrement} title="-"></Button>
                     <Text style={{ color: '#999' }}>{this.props.count}</Text>
-                    <Button onPress={this.props.increment}>+</Button>
+                    <Button onPress={this.props.increment} title="+"></Button>
                 </View>
             </View>
         );
