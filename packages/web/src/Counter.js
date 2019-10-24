@@ -9,9 +9,9 @@ class Counter extends Component {
       <div className="counter">
         <h2>Counter</h2>
         <div>
-          <button onClick={this.props.decrement}>-</button>
-          <span className="count">{this.props.count}</span>
-          <button onClick={this.props.increment}>+</button>
+          <button className="btn btn-primary" onClick={this.props.decrement}>-</button>
+          <span className="btn btn-link">{this.props.count}</span>
+          <button className="btn btn-info" onClick={this.props.increment}>+</button>
         </div>
       </div>
     );
